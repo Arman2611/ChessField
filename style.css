@@ -1,0 +1,80 @@
+/* Global styles */
+* {
+	border: 0;
+	margin: 0 auto;
+	box-sizing: border-box;
+}
+
+body {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	min-height: 100vh;
+}
+#wrapper {
+	user-select: none;
+	width: 610px;
+	min-width: 100px;
+	height: 610px;
+	min-height: 610px;
+	color: #FFFFFF;
+	background: #808B9F;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+.letters {
+	height: 32px;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: center;
+}
+.letters > span {
+	width: 68px;
+	text-align: center;
+	font-size: 12px;
+}
+#inner-wrapper {
+	display: flex;
+	align-items: stretch;
+}
+.numbers {
+	width: 32px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
+.numbers > span {
+	height: 68px;
+	display: flex;
+	align-items: center;
+}
+#chess-field {
+	width: 546px;
+	height: 546px;
+	border: 1px solid #DBDBDD;
+	display: flex;
+	flex-wrap: wrap;
+	background: #DBDBDD;
+}
+.cell {
+	width: 68px;
+	height: 68px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	cursor: pointer;
+	overflow: hidden;
+	font-size: 60px;
+}
+.shadow {text-shadow: 0px 0px 6px black}
+.white {background: #DBDBDD}
+.white:hover {
+	border: 2px solid black;	
+}
+.black {background: #808B9F}
+.black:hover {
+	border: 2px solid black;
+}
