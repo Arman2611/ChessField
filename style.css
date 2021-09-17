@@ -55,8 +55,8 @@ body {
 	width: 546px;
 	height: 546px;
 	border: 1px solid #DBDBDD;
-	display: flex;
-	flex-wrap: wrap;
+	display: grid;
+	grid-template-columns: repeat(8, 1fr);
 	background: #DBDBDD;
 }
 .cell {
